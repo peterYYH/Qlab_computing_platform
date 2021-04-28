@@ -24,7 +24,7 @@ step2: 新建ipynb文件，输入\(**推荐方式1**\)
 
 {% tabs %}
 {% tab title="方式1" %}
-```
+```text
 # 借助findspark包识别spark路径
 import findspark
 findspark.init()
@@ -61,7 +61,7 @@ sys.path.insert(0,os.path.join(spark_name,'python/lib/py4j-0.10.4-src.zip'))
 
 ## 使用方式2：\(启动有点麻烦\)
 
-### 直接在命令行中启动pyspark，设置启动选项为jupyter 
+### 直接在命令行中启动pyspark，设置启动选项为jupyter
 
 在命令行中输入：
 
@@ -86,13 +86,13 @@ vim ~/.bashrc
 ```
 
 **step2: 添加如下信息**  
- `export PYSPARK_DRIVER_PYTHON=jupyter  
-export PYSPARK_PYTHON=/home/hadoop/anaconda3/bin/python3  
+`export PYSPARK_DRIVER_PYTHON=jupyter    
+export PYSPARK_PYTHON=/home/hadoop/anaconda3/bin/python3    
 export PYSPARK_DRIVER_PYTHON_OPTS="notebook"`  
- **step3:**  
- `source ~/.bashrc`  
- **step4: 启动**  
- 运行pyspark直接启动
+**step3:**  
+`source ~/.bashrc`  
+**step4: 启动**  
+运行pyspark直接启动
 
 ```bash
 hadoop@slave1:~$ pyspark
@@ -107,7 +107,7 @@ pyspark --master spark://slave:7077 --executor-memory xxxM --total-executor-core
 ### 缺点：
 
 因为export了`PYSPARK_DRIVER_PYTHON` 与`PYSPARK_DRIVER_PYTHON_OPTS` 两个环境变量后，非shell的pyspark 生怕认可应用也将使用jupyter-notebook，这必然引起混乱，**所以推荐方法一和方法二**  
- 实测，添加到环境变量中后，spark只支持ipynb的文件，因此不用。
+实测，添加到环境变量中后，spark只支持ipynb的文件，因此不用。
 
 [参考链接](https://blog.csdn.net/NJZhuJinhua/article/details/79441217)
 

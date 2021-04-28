@@ -12,23 +12,23 @@ description: 作者：杨煜涵      时间：4月22日
 
 [**一、 Spark Standalone Mode** ](ji-qun-shi-yong-shou-ce-xia.md#spark-standalone-mode)
 
-[1.1 简介](ji-qun-shi-yong-shou-ce-xia.md#11-jian-jie) 
+[1.1 简介](ji-qun-shi-yong-shou-ce-xia.md#11-jian-jie)
 
 [1.2 client模式（默认） ](ji-qun-shi-yong-shou-ce-xia.md#12-client-mo-shi-mo-ren)
 
-[1.3 cluster模式\(不显示运行结果\)](ji-qun-shi-yong-shou-ce-xia.md#13-cluster-mo-shi-bu-xian-shi-yun-hang-jie-guo) 
+[1.3 cluster模式\(不显示运行结果\)](ji-qun-shi-yong-shou-ce-xia.md#13-cluster-mo-shi-bu-xian-shi-yun-hang-jie-guo)
 
-[**二、 Spark on YARN**](ji-qun-shi-yong-shou-ce-xia.md#spark-on-yarn) 
+[**二、 Spark on YARN**](ji-qun-shi-yong-shou-ce-xia.md#spark-on-yarn)
 
 [2.1 简介 ](ji-qun-shi-yong-shou-ce-xia.md#21-jian-jie)
 
-[2.2 yarn-cluster和yarn-client模式的区别](ji-qun-shi-yong-shou-ce-xia.md#22-yarncluster-he-yarnclient-mo-shi-de-qu-bie) 
+[2.2 yarn-cluster和yarn-client模式的区别](ji-qun-shi-yong-shou-ce-xia.md#22-yarncluster-he-yarnclient-mo-shi-de-qu-bie)
 
-[2.3 yarn-cluster模式](ji-qun-shi-yong-shou-ce-xia.md#23-yarncluster-mo-shi) 
+[2.3 yarn-cluster模式](ji-qun-shi-yong-shou-ce-xia.md#23-yarncluster-mo-shi)
 
-[2.4 yarn-client模式（默认）](ji-qun-shi-yong-shou-ce-xia.md#24-yarnclient-mo-shi-mo-ren) 
+[2.4 yarn-client模式（默认）](ji-qun-shi-yong-shou-ce-xia.md#24-yarnclient-mo-shi-mo-ren)
 
-[**三、 Spark on Mesos**](ji-qun-shi-yong-shou-ce-xia.md#spark-on-mesos) 
+[**三、 Spark on Mesos**](ji-qun-shi-yong-shou-ce-xia.md#spark-on-mesos)
 
 [**四、 Spark on Kubernetes** ](ji-qun-shi-yong-shou-ce-xia.md#spark-on-kubernetes)
 
@@ -124,7 +124,7 @@ client方式提交任务，在客户端提交多个application，客户端会为
 
 结果可在[10.129.2.155:18081](http://10.129.2.155:18081/)口查看
 
-![](../../../.gitbook/assets/1%20%285%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/1%20%285%29.png)
 
 ### 1.3 cluster模式\(不显示运行结果\)
 

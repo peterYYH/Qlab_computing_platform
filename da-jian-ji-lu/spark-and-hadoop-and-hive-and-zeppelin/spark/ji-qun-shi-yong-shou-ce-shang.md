@@ -20,19 +20,19 @@ description: 作者：杨煜涵              时间：4月22日
 
 [3. scala插件安装 ](ji-qun-shi-yong-shou-ce-shang.md#2-an-zhuang-intellijidea)
 
-[4. 设置全局JDK和Scala SDK](ji-qun-shi-yong-shou-ce-shang.md#4-she-zhi-quan-ju-jdk-he-scala-sdk) 
+[4. 设置全局JDK和Scala SDK](ji-qun-shi-yong-shou-ce-shang.md#4-she-zhi-quan-ju-jdk-he-scala-sdk)
 
 [5、创建maven工程 ](ji-qun-shi-yong-shou-ce-shang.md#5-chuang-jian-maven-gong-cheng)
 
 [三、Intellij IDEA打包scala代码在spark中运行： ](ji-qun-shi-yong-shou-ce-shang.md#san-intellij-idea-da-bao-scala-dai-ma-zai-spark-zhong-yun-hang)
 
-[1、修改pom.xml文件](ji-qun-shi-yong-shou-ce-shang.md#1-xiu-gai-pomxml-wen-jian) 
+[1、修改pom.xml文件](ji-qun-shi-yong-shou-ce-shang.md#1-xiu-gai-pomxml-wen-jian)
 
 [2、编写一个Scala程序，统计字母的行数 ](ji-qun-shi-yong-shou-ce-shang.md#2-bian-xie-yi-ge-scala-cheng-xu-tong-ji-zi-mu-de-hang-shu)
 
-[3、打包代码](ji-qun-shi-yong-shou-ce-shang.md#3-da-bao-dai-ma) 
+[3、打包代码](ji-qun-shi-yong-shou-ce-shang.md#3-da-bao-dai-ma)
 
-[4、运行在spark集群上面](ji-qun-shi-yong-shou-ce-shang.md#4-yun-hang-zai-spark-ji-qun-shang-mian) 
+[4、运行在spark集群上面](ji-qun-shi-yong-shou-ce-shang.md#4-yun-hang-zai-spark-ji-qun-shang-mian)
 
 [四、Spark集群的三种部署方式 ](ji-qun-shi-yong-shou-ce-shang.md#si-spark-ji-qun-de-san-zhong-bu-shu-fang-shi)
 
@@ -61,7 +61,7 @@ print("Lines with a: %i, lines with b: %i" % (numAs, numBs))
 
 运行成功：
 
-![](../../../.gitbook/assets/0%20%283%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/0%20%283%29.png)
 
 ## 二、Maven&Intellij IDEA打jar包以及创建scala project
 
@@ -95,7 +95,7 @@ b. 然后加入到环境变量
 
 ![](../../../.gitbook/assets/2.png)
 
-![](../../../.gitbook/assets/3%20%284%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/3%20%284%29.png)
 
 ### 4. 设置全局JDK和Scala SDK
 
@@ -133,7 +133,7 @@ c. 创建一个新的maven工程，选择JDK，然后next，GroupID和ArtifactId
 
 把这三个文件夹都删掉，在main文件夹中建立一个名为 scala 的文件夹，并右键点击 scala 文件夹，选择 Make Directory as，然后选择Sources Root ，这里主要意思是将 scala 文件夹标记为一个源文件的根目录，然后在其内的所有代码中的 package ，其路径就从这个根目录下开始算起。
 
-在已经标记好为源文件根目录的 scala 文件夹 上，右键选择 New，然后选择 Scala Class，随后设置好程序的名称，并且记得将其设置为一个 Object\(类似于Java中含有静态成员的静态类\)，正常的话，将会打开这个 Object 代码界面，并且可以看到IntelliJ IDEA自动添加了一些最基本的信息 
+在已经标记好为源文件根目录的 scala 文件夹 上，右键选择 New，然后选择 Scala Class，随后设置好程序的名称，并且记得将其设置为一个 Object\(类似于Java中含有静态成员的静态类\)，正常的话，将会打开这个 Object 代码界面，并且可以看到IntelliJ IDEA自动添加了一些最基本的信息
 
 在test.scala中添加如下代码：
 
@@ -217,8 +217,7 @@ a. 把jar包放到能访问spark集群的机器上面
 
 b. 运行
 
-`hadoop@master:~/local/sparkwithhive/bin$ spark-submit --master` [`spark://master:7077`](spark://master:7077/) `/home/hadoop/jar/wordcount2.jar 2>&1|grep "Lines with"`  
-
+`hadoop@master:~/local/sparkwithhive/bin$ spark-submit --master` [`spark://master:7077`](spark://master:7077/) `/home/hadoop/jar/wordcount2.jar 2>&1|grep "Lines with"`
 
 c. 结果
 

@@ -10,7 +10,7 @@ description: 作者：杨煜涵         时间：2020-4-19
 
 zeppelin这个工具非常方便的嵌入了多种编译器，具有数据可视化功能，以及编译器的资源配置功能。相较之前计算资源的通过shell命令的分配，zeppelin可以直接通过web页面指定资源的配置：
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/image%20%2847%29.png)
 
 ### 多核与单核性能对比
 
@@ -48,11 +48,11 @@ select * from city
 {% endtab %}
 {% endtabs %}
 
-![](../.gitbook/assets/image%20%2822%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/image%20%2822%29.png)
 
 ![](../.gitbook/assets/image%20%2812%29.png)
 
 zeppelin的sql编译器还提供了交互式的操作，可以通过图形界面选择自己需要的 关键字和值 做统计分析：
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/image%20%2819%29.png)
 

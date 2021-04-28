@@ -6,7 +6,7 @@ description: 作者：杨煜涵     时间：4月22日
 
 ## 简介
 
- [Zeppelin](https://blog.csdn.net/laozhaokun/article/details/44803061)是一个Apache的孵化项目。一个基于web的笔记本，支持交互式数据分析。你可以用SQL、Scala等做出数据驱动的、交互、协作的文档。\(类似于ipython notebook，可以直接在浏览器中写代码、笔记并共享\)
+[Zeppelin](https://blog.csdn.net/laozhaokun/article/details/44803061)是一个Apache的孵化项目。一个基于web的笔记本，支持交互式数据分析。你可以用SQL、Scala等做出数据驱动的、交互、协作的文档。\(类似于ipython notebook，可以直接在浏览器中写代码、笔记并共享\)
 
 ## 下载与安装
 
@@ -16,7 +16,7 @@ description: 作者：杨煜涵     时间：4月22日
 
 #### 1.解压后进入conf文件夹，复制两个模板文件
 
-`~/conf$ scp zeppelin-site.xml.template zeppelin-site.xml` 
+`~/conf$ scp zeppelin-site.xml.template zeppelin-site.xml`
 
 `~/conf$ scp zeppelin-env.sh.template zeppelin-env.sh`
 
@@ -85,7 +85,7 @@ export HADOOP_CONF_DIR=~/local/hadoop-2.9.0
 
 #### 7.进入zeppelin
 
-浏览器进入网页号：[10.129.2.159:9090](http://10.129.2.159:9090/#/)  页面中有 **zeppelin tutorial** 可供学习
+浏览器进入网页号：[10.129.2.159:9090](http://10.129.2.159:9090/#/) 页面中有 **zeppelin tutorial** 可供学习
 
 ## 问题
 

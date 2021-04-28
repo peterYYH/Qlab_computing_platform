@@ -41,10 +41,8 @@
     * [Zeppelin配置与使用](da-jian-ji-lu/spark-and-hadoop-and-hive-and-zeppelin/zeppelin/zeppelin-pei-zhi-yu-shi-yong.md)
 * [OpenPai搭建指南](da-jian-ji-lu/untitled.md)
 
-## 问题记录
-
 ## 讨论区
 
 * [讨论区](tao-lun-qu/tao-lun-qu.md)
-* [Untitled](untitled.md)
+* [Untitled](tao-lun-qu/untitled.md)
 

@@ -25,9 +25,9 @@ RDD 分为二类：transformation 和 action。
 
 ## DataFrame
 
-DataFrame与RDD相同之处，都是不可变分布式弹性数据集。不同之处在于，**DataFrame的数据集都是按指定列存储，即结构化数据**。类似于传统数据库中的表。DataFrame的设计是为了让大数据处理起来更容易。DataFrame允许开发者把结构化数据集导入DataFrame，并做了higher-level的抽象；DataFrame提供特定领域的语言\(DSL\)API来操作你的数据集。除了数据以外，还记录数据的结构信息，即schema。同时，与Hive类似，DataFrame也支持嵌套数据类型（struct、array和map）。从API易用性的角度上看，DataFrame API提供的是一套高层的关系操作，比函数式的RDD API要更加友好，门槛更低。由于与R和Pandas的DataFrame类似，Spark DataFrame很好地继承了传统单机数据分析的开发体验。 
+DataFrame与RDD相同之处，都是不可变分布式弹性数据集。不同之处在于，**DataFrame的数据集都是按指定列存储，即结构化数据**。类似于传统数据库中的表。DataFrame的设计是为了让大数据处理起来更容易。DataFrame允许开发者把结构化数据集导入DataFrame，并做了higher-level的抽象；DataFrame提供特定领域的语言\(DSL\)API来操作你的数据集。除了数据以外，还记录数据的结构信息，即schema。同时，与Hive类似，DataFrame也支持嵌套数据类型（struct、array和map）。从API易用性的角度上看，DataFrame API提供的是一套高层的关系操作，比函数式的RDD API要更加友好，门槛更低。由于与R和Pandas的DataFrame类似，Spark DataFrame很好地继承了传统单机数据分析的开发体验。
 
-![](../.gitbook/assets/image%20%2838%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/image%20%2838%29.png)
 
 上图直观地体现了DataFrame和RDD的区别。左侧的RDD\[Person\]虽然以Person为类型参数，但Spark框架本身不了解Person类的内部结构。而右侧的DataFrame却提供了详细的结构信息，使得Spark SQL可以清楚地知道该数据集中包含哪些列，每列的名称和类型各是什么。DataFrame多了数据的结构信息，即schema。RDD是分布式的Java对象的集合。DataFrame是分布式的Row对象的集合。DataFrame除了提供了比RDD更丰富的算子以外，更重要的特点是提升执行效率、减少数据读取以及执行计划的优化，比如filter下推、裁剪等。**性能上比RDD要高 。**
 

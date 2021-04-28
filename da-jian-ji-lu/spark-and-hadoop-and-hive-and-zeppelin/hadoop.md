@@ -6,29 +6,29 @@ description: 作者：杨煜涵        时间：2019年12月15日
 
 ## 目录
 
-\*\*\*\*[ **一、Hadoop基本介绍**](hadoop.md#yi-hadoop-ji-ben-jie-shao) ****
+\*\*\*\*[ **一、Hadoop基本介绍**](hadoop.md#yi-hadoop-ji-ben-jie-shao) _\*\*_
 
-[1.1 Hadoop简介](hadoop.md#11-hadoop-jian-jie) 
+[1.1 Hadoop简介](hadoop.md#11-hadoop-jian-jie)
 
-[1.2 Hadoop生态系统](hadoop.md#12-hadoop-sheng-tai-xi-tong) 
+[1.2 Hadoop生态系统](hadoop.md#12-hadoop-sheng-tai-xi-tong)
 
 [1.3 Hadoop集群的部署结构图 ](hadoop.md#13-hadoop-ji-qun-de-bu-shu-jie-gou-tu)
 
-\*\*\*\*[**二、具体搭建步骤**](hadoop.md#er-ju-ti-da-jian-bu-zhou) ****
+\*\*\*\*[**二、具体搭建步骤**](hadoop.md#er-ju-ti-da-jian-bu-zhou) _\*\*_
 
-[2.1 预备工作](hadoop.md#21-yu-bei-gong-zuo) 
+[2.1 预备工作](hadoop.md#21-yu-bei-gong-zuo)
 
 [2.2 配置运行环境 ](hadoop.md#22-pei-zhi-yun-hang-huan-jing)
 
-[2.3 Hadoop安装配置](hadoop.md#23-hadoop-an-zhuang-pei-zhi) 
+[2.3 Hadoop安装配置](hadoop.md#23-hadoop-an-zhuang-pei-zhi)
 
 [2.4 启动hadoop服务 ](hadoop.md#24-qi-dong-hadoop-fu-wu)
 
 \*\*\*\*[**三、 计算平台验证** ](hadoop.md#san-ji-suan-ping-tai-yan-zheng)\*\*\*\*
 
-[3.1 HDFS服务](hadoop.md#31-hdfs-fu-wu) 
+[3.1 HDFS服务](hadoop.md#31-hdfs-fu-wu)
 
-[3.2 YARN服务](hadoop.md#32-yarn-fu-wu) 
+[3.2 YARN服务](hadoop.md#32-yarn-fu-wu)
 
 \*\*\*\*[**四、参考资料** ](hadoop.md#si-can-kao-zi-liao)\*\*\*\*
 
@@ -321,7 +321,7 @@ master
 
 此时在master上面运行的进程有：NameNode、SecondaryNameNode和DataNode
 
-![](../../.gitbook/assets/4%20%285%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/4%20%285%29.png)
 
 #### 启动YARN
 
@@ -343,7 +343,7 @@ hadoop服务主要有以下两个：
 
 ### 3.1 HDFS服务：
 
-通过http://&lt;master-ip&gt;:50070端口我们可以访问分布式文件系统的webUI界面，为了保证集群的数据安全性，我们设置了用户权限和登录账户密码系统。
+通过[http://&lt;master-ip&gt;:50070端口我们可以访问分布式文件系统的webUI界面，为了保证集群的数据安全性，我们设置了用户权限和登录账户密码系统。](http://<master-ip>:50070端口我们可以访问分布式文件系统的webUI界面，为了保证集群的数据安全性，我们设置了用户权限和登录账户密码系统。)
 
 ![HDFS&#x7528;&#x6237;&#x767B;&#x5F55;&#x754C;&#x9762;](../../.gitbook/assets/6.png)
 
@@ -359,7 +359,7 @@ hadoop服务主要有以下两个：
 
 Apache Hadoop YARN （Yet Another Resource Negotiator，另一种资源协调者）是一种新的 Hadoop 资源管理器，它是一个通用资源管理系统，可为上层应用提供统一的资源管理和调度，它的引入为集群在利用率、资源统一管理和数据共享等方面带来了巨大好处。
 
-通过http://&lt;master-ip&gt;:8088端口我们可以访问提交任务的运行结果，资源利用率等，店家查看logs，再点击stdout：
+通过[http://&lt;master-ip&gt;:8088端口我们可以访问提交任务的运行结果，资源利用率等，店家查看logs，再点击stdout：](http://<master-ip>:8088端口我们可以访问提交任务的运行结果，资源利用率等，店家查看logs，再点击stdout：)
 
 ![](../../.gitbook/assets/9%20%281%29.png)
 

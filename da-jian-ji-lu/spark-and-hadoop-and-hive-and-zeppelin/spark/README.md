@@ -14,15 +14,15 @@ hive的安装依赖mysql，需要先安装mysql，尽量选择联网的情况下
 
 [**1 项目简介** ](./#xiang-mu-jian-jie)\*\*\*\*
 
-[**2 Spark搭建**](./#2spark-da-jian) ****
+[**2 Spark搭建**](./#2spark-da-jian) _\*\*_
 
-\*\*\*\*[**3 Hive安装**](./#3hive-an-zhuang) 
+\*\*\*\*[**3 Hive安装**](./#3hive-an-zhuang)
 
-\*\*\*\*[**4 Mysql安装**](./#4mysql-an-zhuang)  
+\*\*\*\*[**4 Mysql安装**](./#4mysql-an-zhuang)
 
-\*\*\*\*[**5 Hive && spark**](./#5-hive-and-and-spark) 
+\*\*\*\*[**5 Hive && spark**](./#5-hive-and-and-spark)
 
-\*\*\*\*[**6 计算平台验证**](./#6-ji-suan-ping-tai-yan-zheng) 
+\*\*\*\*[**6 计算平台验证**](./#6-ji-suan-ping-tai-yan-zheng)
 
 \*\*\*\*[**7 参考资料** ](./#can-kao-zi-liao)\*\*\*\*
 
@@ -117,7 +117,7 @@ export SPARK_WORKER_MEMORY=100G
 
 * 其余节点上的进程有：
 
-![](../../../.gitbook/assets/2%20%284%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/2%20%284%29.png)
 
 ## 3.Hive安装
 
@@ -225,7 +225,7 @@ hive #启动hive
 
 ```text
 cd /usr/local/sparkwithhive/conf
-cp /usr/local/hive/conf/hive-site.xml 
+cp /usr/local/hive/conf/hive-site.xml
 ```
 
 ### 5.1Spark on hive

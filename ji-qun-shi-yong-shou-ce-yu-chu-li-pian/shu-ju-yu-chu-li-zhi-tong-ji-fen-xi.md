@@ -16,7 +16,7 @@ description: 作者：杨煜涵         时间：2020-4-19
 df=spark.read.csv("hdfs://10.129.2.155:50090/123/data/train.csv",header=True)
 ```
 
-### **1.打印列索引** 
+### **1.打印列索引**
 
 如果datafame有列索引，则会打印其索引标签及数据格式
 
@@ -48,7 +48,7 @@ df_miss=df.agg(*[ (1-fn.count(c)/(fn.count('*'))).alias(c )
 df_miss.show()
 ```
 
-![](../.gitbook/assets/image%20%2852%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/image%20%2852%29.png)
 
 ### **4.统一某一列缺失的个数**
 
@@ -83,7 +83,7 @@ df_most=df.select("Age").groupBy("Age").count().orderBy("count",ascending=False)
 df_most.show()
 ```
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/image%20%286%29.png)
 
 ### **7.求最大最小值**
 

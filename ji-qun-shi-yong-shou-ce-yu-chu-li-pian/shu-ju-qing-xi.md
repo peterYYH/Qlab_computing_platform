@@ -94,7 +94,7 @@ df_miss_no_income = df_miss.select([c for c in df_miss.columns if c!='income'])
 df_miss_no_income.dropna(thresh=3).show()
 ```
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/image%20%2829%29.png)
 
 另外处理缺失值的方法是对其做填充。如果数据时离散型布尔值，可以通过添加第三个类型——Missing，将其转换为另一个分类变量；如果数据是数值类型，可以填充任何的平均数、中间数或者其他预定义的值。
 
@@ -155,7 +155,7 @@ fn.when(df_outliers[c].between(bounds[c][0], bounds[c][1]),df_outliers[c] )
 no_outliers.show()
 ```
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](https://github.com/peterYYH/Qlab_computing_platform/tree/980bb64ec50ce521e87d75d7773895a118e920fb/.gitbook/assets/image%20%2830%29.png)
 
 此时，离群值可当做缺失值来做处理。
 
